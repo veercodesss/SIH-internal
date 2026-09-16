@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -8,14 +8,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/SIH-internal/',
   server: {
-    port: 5173,
-    proxy: {
-      '/functions/v1': {
-        target: 'http://localhost:3001',
-        changeOrigin: true,
-      }
-    }
+    port: 3000,
+    host: '0.0.0.0',
   }
-})
+});

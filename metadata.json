@@ -1,0 +1,6 @@
+{
+  "name": "SkillSetu",
+  "description": "AI-Powered Competency Assessment & Personalized Learning Recommendation Platform for Indian Civil Services under Mission Karmayogi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
